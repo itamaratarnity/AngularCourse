@@ -1,0 +1,15 @@
+<h2>רשימת תלמידים</h2>
+
+<!-- אם אין תלמידים -->
+<p *ngIf="students.length === 0">אין תלמידים להצגה.</p>
+
+<!-- אם יש תלמידים -->
+<ul *ngIf="students.length > 0">
+  <li *ngFor="let student of students"
+      [class.active]="student.active"
+      [class.inactive]="!student.active">
+    {{ student.name }} ({{ student.age }} שנים)
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
