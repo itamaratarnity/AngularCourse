@@ -1,0 +1,72 @@
+/* General container styling */
+.container {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between borders */
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Table header styling */
+.table-dark {
+    background-color: #212529;
+    color: #fff;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: left;
+}
+
+/* Striped rows for better readability */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Bordered table */
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+
+.zero {
+    color: black;
+    transition: all 2s ease;
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.6); /* Grey shadow */
+}
+
+.positive {
+    color: green;
+    transition: all 2s ease;
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.7); /* Green shadow */
+}
+
+.negative {
+    color: red;
+    font-size: 120%;
+    transition: all 2s ease;
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Red shadow */
+}
