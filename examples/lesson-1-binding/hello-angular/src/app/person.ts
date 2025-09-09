@@ -4,7 +4,11 @@ export class Person extends Object {
     email:string = '';
     password:string = '';
     age:number = 0;
-    constructor(firstName:string, lastName:string, email:string, password:string, age:number) {
+    constructor(firstName:string, 
+                lastName:string, 
+                email:string, 
+                password:string, 
+                age:number) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
