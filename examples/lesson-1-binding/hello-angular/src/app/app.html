@@ -26,7 +26,13 @@
             </tr>
             <tr>
                 <td>Counter</td>
-                <td ><label [class.zero]="counter == 0" [class.positive]="counter > 0" [class.negative]="counter < 0">{{ counter }}</label> </td>
+                <td>
+                    <label [class.zero]="counter == 0" 
+                           [class.positive]="counter > 0" 
+                           [class.negative]="counter < 0">
+                           {{ counter }}
+                    </label>
+                </td>
 
             </tr>
             <tr>
